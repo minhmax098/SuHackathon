@@ -1,4 +1,9 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
+
+type NavbarProps = {
+    onOpenTutorials?: () => void;
+};
 
 const linkStyle = ({ isActive }: { isActive: boolean }) => ({
     color: isActive ? "#111827" : "#6B7280",
@@ -7,7 +12,14 @@ const linkStyle = ({ isActive }: { isActive: boolean }) => ({
     padding: "10px 6px",
 });
 
-export default function Navbar() {
+export default function Navbar({ onOpenTutorials }: NavbarProps) {
+    const openTutorials = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        // giống site gốc: đổi URL thành /#tutorials
+        window.location.hash = "tutorials";
+        onOpenTutorials?.();
+    };
+
     return (
         <header style={styles.header}>
         <div style={styles.topRow}>
@@ -29,19 +41,23 @@ export default function Navbar() {
 
         <nav style={styles.nav}>
             <NavLink to="/" style={linkStyle}>
-                Home
+            Home
             </NavLink>
+
             <a href="#about" style={styles.navA}>
-                About
+            About
             </a>
-            <a href="#tutorials" style={styles.navA}>
-                Tutorials
+
+            <a href="#tutorials" style={styles.navA} onClick={openTutorials}>
+            Tutorials
             </a>
+
             <a href="#methods" style={styles.navA}>
-                Methods
+            Methods
             </a>
+
             <a href="#download" style={styles.navA}>
-                Download the App
+            Download the App
             </a>
         </nav>
         </header>
@@ -101,5 +117,6 @@ const styles: Record<string, React.CSSProperties> = {
         textDecoration: "none",
         fontSize: 16,
         padding: "10px 6px",
+        cursor: "pointer",
     },
 };
