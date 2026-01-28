@@ -7,7 +7,6 @@ export default function Home() {
         <Navbar />
         <MainImage />
 
-        // Scroll here
         <div id="about" style={{ padding: 24 }}>About section...</div>
         <div id="tutorials" style={{ padding: 24 }}>Tutorials section...</div>
         <div id="methods" style={{ padding: 24 }}>Methods section...</div>
