@@ -27,7 +27,7 @@ export default function Register() {
         if (!accept) return setErr("Please accept Terms and Conditions");
 
         try {
-        // Backend bạn đang dùng register(name, email, password)
+        // Backend use register(name, email, password)
             await register(`${firstName} ${lastName}`.trim(), email, password);
             nav("/dashboard");
         } catch (e: unknown) {

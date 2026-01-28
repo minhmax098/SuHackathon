@@ -7,8 +7,7 @@ export default function MainImage() {
         <div style={styles.textWrap}>
             <h1 style={styles.h1}>
             Based on research performed by the <br />
-            ARS National Peanut Research <br />
-            Laboratory
+            Ctrl + S Team Research <br />
             </h1>
         </div>
         </section>

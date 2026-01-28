@@ -9,12 +9,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     async function refreshMe() {
         try {
-        const { data } = await api.get("/auth/me");
-        setUser(data.user);
+            const { data } = await api.get("/auth/me");
+            setUser(data.user);
         } catch {
-        setUser(null);
+            setUser(null);
         } finally {
-        setLoading(false);
+            setLoading(false);
         }
     }
 

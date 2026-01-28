@@ -17,8 +17,6 @@ export default function Login() {
         try {
         await login(email, password);
 
-        // nếu muốn "remember me" thì bạn giữ token ở localStorage (đang làm vậy)
-        // nếu không remember, bạn có thể đổi sang sessionStorage
         if (!remember) {
             const token = localStorage.getItem("token");
             if (token) {
@@ -54,21 +52,21 @@ export default function Login() {
             <form className="auth-form" onSubmit={onSubmit}>
                 <label className="auth-label">Email address</label>
                 <input
-                className="auth-input"
-                placeholder="Please enter your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                autoComplete="email"
+                    className="auth-input"
+                    placeholder="Please enter your email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    autoComplete="email"
                 />
 
                 <label className="auth-label">Password</label>
                 <input
-                className="auth-input"
-                placeholder="Please enter your password"
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                autoComplete="current-password"
+                    className="auth-input"
+                    placeholder="Please enter your password"
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    autoComplete="current-password"
                 />
 
                 <div className="auth-row">
