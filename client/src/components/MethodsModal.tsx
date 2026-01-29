@@ -26,7 +26,7 @@ export default function MethodsModal({ open, onClose }: Props) {
 
             <h4 style={styles.h4}>AWC from Probe Readings</h4>
             <p style={styles.p}>
-            Example formulas:
+            Example formulas: 
             </p>
 
             <pre style={styles.code}>
