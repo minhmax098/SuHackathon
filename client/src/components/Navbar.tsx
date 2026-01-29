@@ -64,6 +64,10 @@ export default function Navbar({ onOpenTutorials, onOpenMethods }: NavbarProps) 
             <a href="#download" style={styles.navA}>
             Download the App
             </a>
+
+            <a href="#basins" style={styles.navA}>
+            Basins
+            </a>
         </nav>
         </header>
     );
