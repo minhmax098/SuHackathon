@@ -51,28 +51,28 @@ export default function BasinSection() {
     );
 }
 
-const styles: Record<string, React.CSSProperties> = {
-    wrap: {
-        background: "#fff",
-        border: "1px solid #E5E7EB",
-        borderRadius: 12,
-        padding: 18,
-    },
-    h2: { margin: "0 0 6px", fontSize: 18, color: "#111827" },
-    p: { margin: "0 0 14px", color: "#6B7280" },
-    err: {
-        background: "#FEF2F2",
-        border: "1px solid #FCA5A5",
-        color: "#991B1B",
-        padding: 10,
-        borderRadius: 10,
-        marginBottom: 12,
-    },
-    mapWrap: {
-        height: 520,
-        borderRadius: 12,
-        overflow: "hidden",
-        border: "1px solid #E5E7EB",
-    },
-    map: { width: "100%", height: "100%" },
-};
+// const styles: Record<string, React.CSSProperties> = {
+//     wrap: {
+//         background: "#fff",
+//         border: "1px solid #E5E7EB",
+//         borderRadius: 12,
+//         padding: 18,
+//     },
+//     h2: { margin: "0 0 6px", fontSize: 18, color: "#111827" },
+//     p: { margin: "0 0 14px", color: "#6B7280" },
+//     err: {
+//         background: "#FEF2F2",
+//         border: "1px solid #FCA5A5",
+//         color: "#991B1B",
+//         padding: 10,
+//         borderRadius: 10,
+//         marginBottom: 12,
+//     },
+//     mapWrap: {
+//         height: 520,
+//         borderRadius: 12,
+//         overflow: "hidden",
+//         border: "1px solid #E5E7EB",
+//     },
+//     map: { width: "100%", height: "100%" },
+// };
