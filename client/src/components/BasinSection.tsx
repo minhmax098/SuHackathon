@@ -181,9 +181,9 @@ export default function BasinSection() {
 
         setQuota(json as QuotaResult);
         } catch (e) {
-        setQuotaErr(String((e as Error).message ?? e));
+            setQuotaErr(String((e as Error).message ?? e));
         } finally {
-        setLoading(false);
+            setLoading(false);
         }
     }
 
@@ -204,10 +204,10 @@ export default function BasinSection() {
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "flex-start" }}>
             <div style={{ minWidth: 260 }}>
                 <div>
-                <b>Selected basin:</b> {selectedName || "(none)"}
+                    <b>Selected basin:</b> {selectedName || "(none)"}
                 </div>
                 <div>
-                <b>ID:</b> {selectedId || "-"}
+                    <b>ID:</b> {selectedId || "-"}
                 </div>
             </div>
 
